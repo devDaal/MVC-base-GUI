@@ -16,6 +16,7 @@ class Controller:
         self.settings_page_controller = SettingsController(model, view)
         self.homing_page_controller = Window1Controller(model, view)
         self.model.hello.add_event_listener("Hello", self.hello_world)
+        self.model.hello.add_event_listener("joke", self.settings_page_controller.len_joke)
         
    #def event_to_update_view_using_variables_etc_from_model(self, parent):
        #update the view using methods and variables from the model through parent.bla bla bla

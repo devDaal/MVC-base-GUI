@@ -1,5 +1,5 @@
-from views.main import View
-from models.main import Model
+from app.views.main import View
+from app.models.main import Model
 
 class SettingsController:
     
@@ -15,6 +15,10 @@ class SettingsController:
         
     def test(self):
         print("Testito")
+        joke = self.model.hello.get_joke()
+        print("The joke is", joke['setup'])
+        return len(joke['setup'])
+        
     
     def start_page(self):
         self.view.switch("startpage")

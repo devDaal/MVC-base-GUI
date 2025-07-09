@@ -1,4 +1,4 @@
-from .hello_test import Hello_Test
+from .hello_model import Hello_Test
 
 class Model:
     
